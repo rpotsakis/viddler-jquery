@@ -4,7 +4,7 @@ A jQuery plugin that simplifies embedding Viddler video.
 Supports HTML5 video embed with flash fallback.  Basic styles provide inline and modal playback.
 
 ## How Do I Use It?
-Include jQuery 1.8+, jquery.viddler.js, jquery.viddler.css in your layout and target your videos container with `fitVids()`.
+Include jQuery 1.8+, jquery.viddler.js, jquery.viddler.css in your layout and target your videos container with `viddler()`.
 
 ```html
 <link href="path/to/jquery.viddler.css" rel="stylesheet" type="text/css">
@@ -18,16 +18,8 @@ Include jQuery 1.8+, jquery.viddler.js, jquery.viddler.css in your layout and ta
 </script>
 ```
 
-This will wrap each video in a `div.fluid-width-video-wrapper` and apply the necessary CSS. After the initial Javascript call, it's all percentage-based CSS magic.
+See demo.html for example markup.
 
-## Currently Supported Players
-<table>
-<tr><td>YouTube</td><td>Y</td></tr>
-<tr><td>Vimeo</td><td>Y</td></tr>
-<tr><td>Blip.tv</td><td>Y</td></tr>
-<tr><td>Viddler</td><td>Y</td></tr>
-<tr><td>Kickstarter</td><td> Y</td></tr>
-</table>
 
 ## Options Example
 
