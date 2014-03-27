@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Viddler Test</title>
+	
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	 <script src="jquery.viddler.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="jquery.viddler.css">
+</head>
+ 
+<body>
+ 
+	Inline:<br/>
+	<div id="player-inline"></div>
+	<div>
+		Tests:
+		<a href="javascript:$('#player-inline').viddler('cue', '7a0d64f2');">Cue 1</a> |
+		<a href="javascript:$('#player-inline').viddler('cue', 'c83cacd4');">Cue 2</a> |
+		<a href="javascript:$('#player-inline').viddler('load', '7a0d64f2', 60);">Load (60s in)</a> |
+		<a href="javascript:$('#player-inline').viddler('play');">Play</a> | 
+		<a href="javascript:$('#player-inline').viddler('stop');">Stop</a>
+	</div>
+	<br/><br/>
+	
+	Modal:<br/>
+	<div id="player-modal"></div>
+	<br/>
+
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#player-inline').viddler({ 
+				'video_id'  : '7a0d64f2',
+				'width' : 437,
+				'height' : 246
+			});
+
+			$('#player-modal').viddler({ 
+				'video_id'  : '7a0d64f2',
+				'width' : 437,
+				'height' : 246,
+				'embed_mode' : 'modal'
+			});
+
+		})
+	</script>
+</body>
+</html>
