@@ -37,3 +37,7 @@ See demo.html for example markup.
 
 ## Documentation
 http://developers.viddler.com/documentation/chromeless/
+
+## License
+
+MIT © [Rick Potsakis]
